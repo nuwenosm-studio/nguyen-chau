@@ -1,0 +1,29 @@
+/* item's length = 2links(200px) + hor_line(100px) = 300px */
+.nav_bar {
+   width: 340px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.hor_line {
+   background-color: var(--clr-dark);
+   width: 100px;
+   height: 3px;
+}
+.nav_link {
+   width: 100px;
+   height: 40px;
+   display: grid;
+   place-items: center;
+
+   font-family: var(--font-title);
+   font-size: var(--fs-m);
+   font-weight: var(--fw-medium);
+   transition: 0.4s ease-in-out;
+}
+.nav_link:hover {
+   border-radius: var(--br-m);
+   background-color: var(--clr-dark);
+   color: var(--clr-light);
+}
+

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+   --clr-dark: #000000;
+   --clr-light: #ffffff;
+   --clr-theme: #0038FF;
+
+   --font-title: 'Lexend', sans-serif;
+   --font-text: 'Space Grotesk', sans-serif;
+
+   --fs-big: 96px;
+   --fs-l: 24px;
+   --fs-m: 20px;
+   --fs-s: 16px;
+   --fs-xs: 14px;
+
+   --fw-thin: 400;
+   --fw-regular: 500;
+   --fw-medium: 600;
+   --fw-bold: 700;
+
+   --br-s: 2px;
+   --br-m: 4px;
+   --br-l: 8px;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html {
+   scroll-behavior: smooth;
+}
+body {
+   font-family: var(--font-text);
+   font-size: var(--fs-xs);
+   font-weight: var(--fw-thin);
+   line-height: 1.75;
+   letter-spacing: 0.75px;
+
+   color: var(--clr-dark);
+   background-color: var(--clr-light);
+   padding: 30px 0;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+ul {
+   list-style: none;
+}
+a {
+   color: var(--clr-dark);
+   text-decoration: none;
+}
