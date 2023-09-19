@@ -8,7 +8,7 @@
 .hor_line {
    background-color: var(--clr-dark);
    width: 100px;
-   height: 3px;
+   height: 2.5px;
 }
 .nav_link {
    width: 100px;
@@ -17,8 +17,8 @@
    place-items: center;
 
    font-family: var(--font-title);
+   font-weight: var(--fw-thin);
    font-size: var(--fs-m);
-   font-weight: var(--fw-medium);
    transition: 0.4s ease-in-out;
 }
 .nav_link:hover {

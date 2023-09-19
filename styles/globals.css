@@ -11,7 +11,7 @@
    --fs-big: 96px;
    --fs-l: 24px;
    --fs-m: 20px;
-   --fs-s: 16px;
+   --fs-s: 17px;
    --fs-xs: 14px;
 
    --fw-thin: 400;
@@ -22,6 +22,8 @@
    --br-s: 2px;
    --br-m: 4px;
    --br-l: 8px;
+
+   --width-phone-s: 340px;
 }
 * {
    margin: 0;
@@ -34,7 +36,7 @@ html {
 body {
    font-family: var(--font-text);
    font-size: var(--fs-xs);
-   font-weight: var(--fw-thin);
+   font-weight: var(--fw-regular);
    line-height: 1.75;
    letter-spacing: 0.75px;
 
@@ -42,6 +44,7 @@ body {
    background-color: var(--clr-light);
    padding: 30px 0;
 
+   width: 100vw;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -52,4 +55,70 @@ ul {
 a {
    color: var(--clr-dark);
    text-decoration: none;
+}
+main {
+   margin-top: 80px;
+}
+/* reuse components */
+.page_container {
+   width: var(--width-phone-s);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.page_title-container {
+   position: relative;
+   margin-bottom: 40px;
+}
+.page_title {
+   font-family: var(--font-title);
+   font-size: var(--fs-big);
+}
+.square_top-blue {
+   position: absolute;
+   right: -18px;
+   top: 16px;
+   width: 25px;
+   height: 25px;
+   background-color: var(--clr-theme);
+   border-radius: var(--br-s);
+}
+
+/* reuse sub-components */
+.component_container {
+   position: relative;
+   width: var(--width-phone-s);
+   height: var(--width-phone-s);
+   border-radius: var(--br-l);
+   overflow: hidden;
+}
+.component_img_container {
+   position: relative;
+   width: var(--width-phone-s);
+   height: var(--width-phone-s);
+}
+.component_text_container {
+   font-size: var(--fs-s);
+   transition: 0.4s ease-in-out;
+}
+.component_head {
+   display: flex;
+}
+.component_title {
+   font-weight: var(--fw-medium);
+}
+.component_body {
+   padding-left: 40px;
+}
+.component_row {
+   display: flex;
+   margin: 16px 0;
+}
+.component_space {
+   padding-left: 2px;
+   padding-right: 12px;
+}
+.highlight_blue {
+   color: var(--clr-theme);
+   font-weight: var(--fw-medium);
 }
