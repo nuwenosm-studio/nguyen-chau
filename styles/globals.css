@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
-   --clr-dark: #000000;
+   --clr-dark: #161616;
+   --clr-gray: #292C31;
    --clr-light: #ffffff;
-   --clr-theme: #0038FF;
+   --clr-theme: #1B3AF5;
 
    --font-title: 'Lexend', sans-serif;
    --font-text: 'Space Grotesk', sans-serif;
@@ -24,6 +25,8 @@
    --br-l: 8px;
 
    --width-phone-s: 340px;
+
+   --height-phone-s: 780px;
 }
 * {
    margin: 0;
@@ -62,6 +65,7 @@ main {
 /* reuse components */
 .page_container {
    width: var(--width-phone-s);
+   height: var(--height-phone-s);
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -91,6 +95,7 @@ main {
    height: var(--width-phone-s);
    border-radius: var(--br-l);
    overflow: hidden;
+   cursor: pointer;
 }
 .component_img_container {
    position: relative;
@@ -119,6 +124,34 @@ main {
    padding-right: 12px;
 }
 .highlight_blue {
+   color: var(--clr-theme);
+   font-weight: var(--fw-medium);
+}
+
+input[type=radio] {
+   appearance: none;
+   width: 16px;
+   height: 16px;
+   background-color: var(--clr-light);
+   border: 1px solid var(--clr-dark);
+   border-radius: var(--br-m);
+   margin-right: 8px;
+}
+input[type=radio]:checked {
+   background-color: var(--clr-theme);
+   border: 1px solid var(--clr-light);
+}
+.filter_container {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 40px;
+}
+.subject_item {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.subject_selected {
    color: var(--clr-theme);
    font-weight: var(--fw-medium);
 }

@@ -1,9 +1,12 @@
 /* item's length = 2links(200px) + hor_line(100px) = 300px */
 .nav_bar {
+   position: fixed;
    width: 340px;
+   background-color: var(--clr-light);
    display: flex;
    justify-content: space-between;
    align-items: center;
+   z-index: 10;
 }
 .hor_line {
    background-color: var(--clr-dark);
