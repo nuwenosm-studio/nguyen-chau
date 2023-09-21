@@ -4,7 +4,7 @@ export const homeComponent = {
       ["full-name", "Nguyen Chau"],
       ["position", "Full-Stack Developer"],
       ["experience", "05+ years"],
-      ["frame-work", "Express + Next.js"],
+      ["main-work", "React + Next.js"],
       ["personality", "ENFJ-T"]
    ],
    component_img: "/profile.png",

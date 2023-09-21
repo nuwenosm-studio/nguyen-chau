@@ -155,3 +155,29 @@ input[type=radio]:checked {
    color: var(--clr-theme);
    font-weight: var(--fw-medium);
 }
+
+/* studioPage */
+.proj_item {
+   margin: 20px 0;
+   padding: 16px 10px;
+   border-radius: var(--br-l);
+   border: 2px solid var(--clr-light);
+   cursor: pointer;
+   transition: 0.3s ease-in-out;
+}
+.proj_item:hover {
+   border: 2px solid var(--clr-theme);
+   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.proj_header {
+   font-size: var(--fs-s);
+   font-weight: var(--fw-medium);
+   display: flex;
+   align-items: center;
+}
+.proj_name {
+   margin-left: 8px;
+}
+.proj_tools {
+   color: var(--clr-theme);
+}
